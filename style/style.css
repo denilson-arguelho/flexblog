@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  color: #222222;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*SuperInfo*/
+
+.superinfo-bg {
+  background-color: #122ab2;
+  color: white;
+}
+
+.superinfo {
+  max-width: 960px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 10px;
+}
+
+.superinfo p,
+.superinfo a {
+  margin: 0 10px 10px 10px;
+}
+.superinfo a {
+  color: white;
+}
+
+.superinfo a:hover {
+  color: #2c70ff;
+}
+
+/*Menu*/
+
+.menu-bg {
+  background-color: #2c70ff;
+}
+
+.menu-bg a {
+  color: white;
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+
+.menu-nav a:hover {
+  color: #122ab2;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.menu-logo a {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/*Introdução*/
+
+.introdução {
+  font-size: 3em;
+  line-height: 1;
+
+  padding: 60px 0px;
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+/*Sobre*/
+
+.sobre {
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+
+  max-width: 960px;
+  margin: 0px auto;
+
+  padding: 60px 0px;
+
+  display: flex;
+}
+
+.sobre-info {
+  flex: 2 1 360px;
+  margin: 0 10px;
+}
+
+.sobre-info h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  color: #7c7c7c7c;
+}
+
+.sobre-img {
+  flex: 1 1 1 160px;
+  margin: 0 10px;
+}
+
+/*Produtos*/
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.produtos > h1 {
+  font-size: 3em;
+  margin: 0 10px 60px 10px;
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  
+}
+
+.produtos-item {
+  flex: 1 1 175px;
+  margin: 10px;
+}
+
+.produtos-item h2 {
+  font-size: 3em;
+  color: #a4a4a4;
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+}
+
+.purple {
+  border-top: 10px solid rgb(174, 129, 255);
+}
+
+.pink {
+  border-top: 10px solid rgb(249, 38, 94);
+}
+
+.blue {
+  border-top: 10px solid rgb(102, 217, 235);
+}
+
+/*preco*/
+
+.preco {
+  background-color: #f7f7f7;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+}
+
+.preco-item {
+  flex: 1 1 260px;
+  border: 4px solid white;
+  padding: 20px;
+  margin: 10px;
+}
+
+.preco-item h2 {
+  font-size: 3em;
+  color: #a4a4a4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.preco-item span{
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 10px 0 5px 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.preco-item sup{
+  font-size: 1.5rem;
+}
+
+.preco-item > ul{
+  max-width: 300px;
+  margin: 20px auto;
+ font-size: 1.25em;
+ line-height: 1;
+  font-style: italic;
+  color: #7c7c7c;
+  
+}
+
+/*Criando pseudo element*/
+.preco-item li::after{
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #2c70ff;
+  border-radius: 50%;
+ 
+}
+
+.preco-item li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preco-item a{
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 2.25em;
+  text-align: center;
+}
+
+@media(max-width: 800px){
+  .preco{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*Qualidade*/
+
+.qualidade{
+  max-width: 960px;
+  margin: 60px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qualidade-item{
+  flex: 1 1 300px;
+  margin: 10px;
+  margin: 20px 10px;
+  text-align: justify;
+}
+
+.qualidade-item h2{
+  font-size: 2.25em;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.qualidade-item h2::before{
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #122ab2;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before{
+  background: rgb(174, 129, 255) ;
+}
+.qualidade-item:nth-of-type(3n+2) h2::before{
+  background: rgb(249, 38, 94) ;
+}
+.qualidade-item:nth-of-type(3n+3) h2::before{
+  background: rgb(102, 217, 235) ;
+}
+
+.qualidade-item p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: #7c7c7c;
+}
+
+/*newsletter*/
+
+.newsletter{
+  background-color: #f7f7f7;
+  padding: 60px calc((100% - 960px) /2 );
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info{
+  flex: 1 1 260px;
+  margin: 0 10px;
+}
+
+.newsletter-info h1{
+  font-size: 3em;
+  color: #a4a4a4;
+}
+
+.newsletter-info  p{
+  font-size: 1.25em;
+  font-style: italic;
+  max-width: 230px;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+}
+
+.newsletter-form{
+  flex: 2 1 260px;
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input{
+  flex: 3 1 200px;
+  font-size: 1.25em;
+  color: #7c7c7c;
+  font-style: italic;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  border: 4px solid #2c70ff;
+  background: transparent;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.newsletter-form button{
+  flex: 1 1 200px;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 2.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0px;
+  color: white;
+  background-color: #2c70ff;
+  border: 0px;
+  font-weight: bold;
+  padding: 15px 10px;
+}
+
+/*footer*/
+
+.footer{
+  display: flex;
+  height: 200px;
+
+  background-color: #2c70ff;
+  align-items: center;
+}
+
+.footer p{
+  flex:1;
+  text-align: center;
+  font-size: 2.25em;
+  color: #122ab2;
+}
